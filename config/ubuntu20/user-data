@@ -9,7 +9,7 @@ autoinstall:
     network:
       version: 2
       ethernets:
-        ens33:
+        ens192:
           dhcp4: true
           dhcp-identifier: mac
   ssh:
