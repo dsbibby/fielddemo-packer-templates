@@ -3,7 +3,7 @@ autoinstall:
   version: 1
   identity:
     hostname: packer-ubuntu2004-template
-    password: '$6$i3mNhqKGx$IS9I.RGx9/4pBNbN7l/vXnEgHPHmre5.UOkpCMD9cpJFVhLU3fmvY0t8OszDyT8d7.Z55.KZ8M0daw04Vhrxn0'
+    password: '$6$9ZQ5v/T3jwK1rOum$4dC/Z4VV6mUTgysyN6loqW/W8xAaEBF3JQS4C29yb8GmBxRwRilAk3372FS5hLlmSGrnzFr7cMa.h5Z6AbPTZ/'
     username: autotmm
   network:
     network:
