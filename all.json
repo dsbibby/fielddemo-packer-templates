@@ -27,7 +27,7 @@
             }],
             "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
             "password": "{{user `vcenter_password`}}",
-            "remove_cdrom": true,
+            "remove_cdrom": false,
             "shutdown_command": "echo '{{user `ssh_password`}}' | sudo -S -E shutdown -P now",
             "ssh_password": "{{user `ssh_password`}}",
             "ssh_username": "{{user `ssh_username`}}",
@@ -68,7 +68,7 @@
             }],
             "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
             "password": "{{user `vcenter_password`}}",
-            "remove_cdrom": "true",
+            "remove_cdrom": false,
             "shutdown_command": "echo '{{user `ssh_password`}}' | sudo -S -E shutdown -P now",
             "ssh_password": "{{ user `ssh_password` }}",
             "ssh_username": "{{ user `ssh_username` }}",
@@ -182,7 +182,7 @@
             }],
             "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
             "password": "{{user `vcenter_password`}}",
-            "remove_cdrom": true,
+            "remove_cdrom": false,
             "ssh_password": "{{user `ssh_password`}}",
             "ssh_username": "{{user `ssh_username`}}",
             "storage": [{
@@ -225,8 +225,8 @@
             }],
             "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
             "password": "{{user `vcenter_password`}}",
-            "remove_cdrom": true,
-            "ssh_timeout": "30m",
+            "remove_cdrom": false,
+            "ssh_timeout": "1h",
             "ssh_pty": true,
             "ssh_password": "{{user `ssh_password`}}",
             "ssh_username": "{{user `ssh_username`}}",
@@ -281,7 +281,7 @@
                 "{{ template_dir }}/scripts/win_vmtools.cmd",
                 "{{ template_dir }}/scripts/win2016.ps1"
             ],
-            "remove_cdrom": "true"
+            "remove_cdrom": false
         }
     ],
     "provisioners": [{
