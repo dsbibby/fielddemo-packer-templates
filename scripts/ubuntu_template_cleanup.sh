@@ -2,7 +2,7 @@
 
 # Configure cloud-init for OVF only
 echo 'datasource_list: [ OVF, None ]' | sudo -s tee /etc/cloud/cloud.cfg.d/90_dpkg.cfg
-sed 's/datasource_list: .*$/datasource_list: [ OVF, None ]/' /etc/cloud/cloud.cfg.d/99-installer.cfg
+sed -i 's/datasource_list: .*$/datasource_list: [ OVF, None ]/' /etc/cloud/cloud.cfg.d/99-installer.cfg
 
 # Cleanup VM for Templating
 # Source: https://jimangel.io/post/create-a-vm-template-ubuntu-18.04/
