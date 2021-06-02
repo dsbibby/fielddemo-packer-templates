@@ -11,6 +11,7 @@ autoinstall:
       ethernets:
         ens192:
           dhcp4: true
+          dhcp-identifier: mac
   ssh:
     install-server: true
   user-data:
