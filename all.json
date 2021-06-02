@@ -231,8 +231,8 @@
             "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": true,
-            "ssh_handshake_attempts": "200",
-            "ssh_timeouy": 600
+            "ssh_handshake_attempts": 20,
+            "ssh_timeout": "20m",
             "ssh_password": "{{user `ssh_password`}}",
             "ssh_username": "{{user `ssh_username`}}",
             "storage": [{
@@ -309,7 +309,7 @@
             ],
             "scripts": [
                 "{{ template_dir }}/scripts/ssh_config.sh",
-                "{{ template_dir }}/scripts/ssh_install_autotmm_key.sh",
+                "{{ template_dir }}/scripts/ssh_install_admin_key.sh",
                 "{{ template_dir }}/scripts/centos_update.sh"
             ],
             "type": "shell"
@@ -322,7 +322,7 @@
             "scripts": [
                 "{{ template_dir }}/scripts/ubuntu_update.sh",
                 "{{ template_dir }}/scripts/ssh_config.sh",
-                "{{ template_dir }}/scripts/ssh_install_autotmm_key.sh"
+                "{{ template_dir }}/scripts/ssh_install_admin_key.sh"
             ],
             "type": "shell"
         },
