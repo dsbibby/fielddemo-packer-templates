@@ -4,6 +4,9 @@
 echo 'datasource_list: [ OVF, None ]' | sudo -s tee /etc/cloud/cloud.cfg.d/90_dpkg.cfg
 sed -i 's/datasource_list: .*$/datasource_list: [ OVF, None ]/' /etc/cloud/cloud.cfg.d/99-installer.cfg
 
+# Disable automatic updates
+sed -i 's/"1"/"0"/' /etc/apt/apt.conf.d/20auto-upgrades
+
 # Cleanup VM for Templating
 # Source: https://jimangel.io/post/create-a-vm-template-ubuntu-18.04/
 

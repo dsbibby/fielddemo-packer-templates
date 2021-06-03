@@ -25,7 +25,7 @@
                 "network": "{{user `vcenter_network`}}",
                 "network_card": "vmxnet3"
             }],
-            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
+            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 15:04\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": false,
             "shutdown_command": "echo '{{user `ssh_password`}}' | sudo -S -E shutdown -P now",
@@ -66,7 +66,7 @@
                 "network": "{{user `vcenter_network`}}",
                 "network_card": "vmxnet3"
             }],
-            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
+            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 15:04\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": false,
             "shutdown_command": "echo '{{user `ssh_password`}}' | sudo -S -E shutdown -P now",
@@ -122,7 +122,7 @@
                 "network": "{{user `vcenter_network`}}",
                 "network_card": "vmxnet3"
             }],
-            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
+            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 15:04\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": false,
             "ssh_password": "{{user `ssh_password`}}",
@@ -180,7 +180,7 @@
                 "network": "{{user `vcenter_network`}}",
                 "network_card": "vmxnet3"
             }],
-            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
+            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 15:04\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": false,
             "ssh_password": "{{user `ssh_password`}}",
@@ -223,7 +223,7 @@
                 "network": "{{user `vcenter_network`}}",
                 "network_card": "vmxnet3"
             }],
-            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
+            "notes": "Default SSH User: {{user `ssh_username`}}\nDefault SSH Pass: {{user `ssh_password`}}\nBuilt by Packer @ {{strftime \"%Y-%m-%d %H:%M:%S\"}}.",
             "password": "{{user `vcenter_password`}}",
             "remove_cdrom": false,
             "ssh_timeout": "1h",
@@ -258,7 +258,7 @@
             "winrm_username": "{{user `winrm_username`}}",
             "winrm_password": "{{user `winrm_password`}}",
             "vm_name": "{{ user `windows_2016_vm_name` }}-{{user `buildtime`}}",
-            "notes": "Default User: {{user `winrm_username`}}\nDefault Pass: {{user `winrm_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 03:04\"}}.",
+            "notes": "Default User: {{user `winrm_username`}}\nDefault Pass: {{user `winrm_password`}}\nBuilt by Packer @ {{isotime \"2006-01-02 15:04\"}}.",
             "guest_os_type": "windows9Server64Guest",
             "CPUs": "2",
             "RAM": "4096",
