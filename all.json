@@ -240,7 +240,7 @@
             "vm_name": "{{user `ubuntu2004_vm_name`}}-{{user `buildtime`}}"
         },
         {
-            "name": "Windows2016",
+            "name": "Windows2019",
             "type": "vsphere-iso",
             "username": "{{user `vcenter_username`}}",
             "vcenter_server": "{{user `vcenter_server`}}",
@@ -365,7 +365,7 @@
         },
         {
             "only": [
-                "Windows2016"
+                "Windows2019"
             ],
             "type": "powershell",
             "scripts": [
