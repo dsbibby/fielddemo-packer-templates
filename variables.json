@@ -29,13 +29,13 @@
     "ubuntu2004_iso": "[Syno NFS] ISOs/ubuntu-20.04.1-live-server-amd64.iso",
     "ubuntu2004_checksum": "443511f6bf12402c12503733059269a2e10dec602916c0a75263e5d990f6bb93",
 
-    "windows_2016_vm_name": "packer-windows2019",
-    "windows_2016_iso": "[Syno NFS] ISOs/WindowsServer2019Eval.iso",
-    "windows_2016_checksum": "221f9acbc727297a56674a0f1722b8ac7b6e840b4e1ffbdd538a9ed0da823562",
+    "windows_2019_vm_name": "packer-windows2019",
+    "windows_2019_iso": "[Syno NFS] ISOs/WindowsServer2019Eval.iso",
+    "windows_2019_checksum": "221f9acbc727297a56674a0f1722b8ac7b6e840b4e1ffbdd538a9ed0da823562",
 
     "centos7_vm_name": "packer-centos7",
-    "centos7_iso": "[sc2c02vsan01] iso/CentOS-7-x86_64-DVD-2003.iso",
-    "centos7_checksum": "087a5743dc6fd6706d9b961b8147423ddc029451b938364c760d75440eb7be14",
+    "centos7_iso": "[Syno NFS] ISOs/CentOS-7-x86_64-Minimal-1708.iso",
+    "centos7_checksum": "bba314624956961a2ea31dd460cd860a77911c1e0a56e4820a12b9c5dad363f5",
 
     "centos8_vm_name": "packer-centos8",
     "centos8_iso": "[sc2c02vsan01] iso/CentOS-8.2.2004-x86_64-dvd1.iso",
