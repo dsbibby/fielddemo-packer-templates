@@ -32,6 +32,10 @@
     "windows_2019_vm_name": "packer-windows2019",
     "windows_2019_iso": "[Syno NFS] ISOs/WindowsServer2019Eval.iso",
     "windows_2019_checksum": "221f9acbc727297a56674a0f1722b8ac7b6e840b4e1ffbdd538a9ed0da823562",
+    
+    "windows_2022_vm_name": "packer-windows2022",
+    "windows_2022_iso": "[Syno NFS] ISOs/WindowsServer2022Eval.iso",
+    "windows_2022_checksum": "221f9acbc727297a56674a0f1722b8ac7b6e840b4e1ffbdd538a9ed0da823562",
 
     "centos7_vm_name": "packer-centos7",
     "centos7_iso": "[Syno NFS] ISOs/CentOS-7-x86_64-Minimal-1708.iso",
